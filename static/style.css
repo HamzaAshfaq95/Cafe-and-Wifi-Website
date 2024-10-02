@@ -1,0 +1,71 @@
+.header-tags {
+    display: grid;
+    background-color: #A97738;
+    transition-duration: 0.4s;
+}
+.header-tags:hover {
+    background-color: #f5b041;
+}
+.anchor-tags {
+    padding: 15px;
+}
+.white {
+    color: white;
+    text-decoration: none;
+}
+.big {
+    font-size: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.padding-left {
+    padding-left: 10px;
+}
+.border {
+    border-left-style: solid;
+    border-color: white;
+}
+.main-heading {
+    padding-top: 50px;
+    padding-left: 475px;
+    padding-right: 475px;
+}
+.index {
+    background-image: url(https://media.cntraveller.com/photos/63f37018ea053d878b345cb2/16:9/w_2580,c_limit/London-GettyImages-585295947.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-text {
+    text-align: center;
+}
+.main-para {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    background-color: #A97738;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.button:hover {
+    color: black;
+    background-color: #f5b041;
+}
+.cafe_images {
+    height: 200px;
+    width: 200px;
+}

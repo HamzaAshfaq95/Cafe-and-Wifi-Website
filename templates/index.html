@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="./static/style.css" rel="stylesheet">
+    <div class="header-tags">
+        <div class="anchor-tags">
+            <a class="white big left" href="{{ url_for('home') }}">HOME</a>
+            <a class="white big right padding-left" href="{{ url_for('contact') }}">CONTACT US</a>
+            <div class="white right padding-left big">|</div>
+            <a class="white big right" href="{{ url_for('add') }}">ADD CAFE</a>
+        </div>
+    </div>
+</head>
+<body class="index">
+    <div class="main-heading main-text">
+        <h1>LONDON</h1>
+        <div class="main-para">
+            The best work and study-friendly cafes, restaurants, libraries, and hotel lobbies in London. Expand your coworking map with our list of casual spots with free and reliable Wi-Fi, ample power sockets, and comfy seating areas!
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="button" onclick="window.location.href='{{ url_for('cafes') }}'">All CAFES</button>
+    </div>
+</body>
+</html>

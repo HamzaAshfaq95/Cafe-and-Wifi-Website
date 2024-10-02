@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafes</title>
+    <link href="./static/style.css" rel="stylesheet">
+    <div class="header-tags">
+        <div class="anchor-tags">
+            <a class="white big left" href="{{ url_for('home') }}">HOME</a>
+            <a class="white big right padding-left" href="{{ url_for('contact') }}">CONTACT US</a>
+            <div class="white right padding-left big">|</div>
+            <a class="white big right" href="{{ url_for('add') }}">ADD CAFE</a>
+        </div>
+    </div>
+</head>
+<body>
+    <div>
+        <h1 class="center">All Cafes</h1>
+        {% for cafe in cafes %}
+        <ul>
+            <ul>
+                <p><b>{{ cafe.name }}</b>, {{ cafe.location }}</p>
+                <p><img class="cafe_images" src="{{ cafe.img_url }}" /></p>
+                <p><b>Has Sockets:</b> {% if cafe.has_sockets == 1 %} Yes {% else %} No {% endif %}</p>
+                <p><b>Has Toilet:</b> {% if cafe.has_toilet == 1 %} Yes {% else %} No {% endif %}</p>
+                <p><b>Has Wifi:</b> {% if cafe.has_wifi == 1 %} Yes {% else %} No {% endif %}</p>
+                <p><b>Can Take Calls:</b> {% if cafe.can_take_calls == 1 %} Yes {% else %} No {% endif %}</p>
+                <p><b>Seats:</b> {{ cafe.seats }}</p>
+                <p><b>Coffee Price:</b> {{ cafe.coffee_price }}</p>
+                <p><b>Location:</b></p>
+                <iframe src="{{ cafe.map_url }}" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <br>
+            </ul>
+        </ul>
+        {% endfor %}
+    </div>
+</body>
+</html>

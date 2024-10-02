@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    {% from 'bootstrap5/form.html' import render_form %}
+</head>
+<body>
+   <h1>Contact Form</h1>
+   {{ render_form(form, novalidate=True) }}
+</body>
+</html>
